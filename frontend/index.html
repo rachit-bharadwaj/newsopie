@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsopie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <style>
+    .typing-effect {
+      white-space: nowrap;
+      overflow-x: hidden;
+      animation: typewriter 1s steps(15) infinite alternate,
+        blink 800ms steps(15) infinite normal;
+      border-right: 5px solid black;
+    }
+    @keyframes typewriter {
+      from {
+        width: 0%;
+      }
+      to {
+        width: 100%;
+      }
+    }
+    @keyframes blink {
+      from {
+        border-color: black;
+      }
+      to {
+        border-color: transparent;
+      }
+    }
+  </style>
+  <body class="h-screen bg-gray-200 justify-center flex items-center">
+    <div class="shadow p-20 rounded-lg text-orange-500">
+      <p class="typing-effect text-5xl h-[70px] flex items-center">
+        Working on it...
+      </p>
+    </div>
+  </body>
+</html>
